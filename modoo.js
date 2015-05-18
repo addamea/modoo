@@ -83,7 +83,7 @@ function initMomlMenu() {
     var tags = document.getElementsByClassName("s_m");
     if (tags.length > 0) {
         var lis = tags[0].getElementsByTagName("li");
-        var menuCount = Math.min(lis.length, 7);
+        var menuCount = Math.min(lis.length, 7); // 최대 7개까지만 허용
         agate.runScript('userVariable.menuCount = ' + menuCount);
 
         if (lis.length > 0) {
@@ -100,7 +100,7 @@ function initMomlMenu() {
 
 function _initModoo() {
     // 좌측 상단 메뉴 버튼 감추기
-    //hideElementByClass("fc_btn aside");
+    hideElementByClass("fc_btn aside");
     
     // 메뉴 초기화
     initMomlMenu();
